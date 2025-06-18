@@ -1,0 +1,215 @@
+'''# Environnement virtuel spécifique
+chatbot/
+
+# Environnements virtuels Python (patterns génériques)
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# Fichiers de données et modèles
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.model
+
+# Bases de données
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+log/
+
+# Fichiers temporaires
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*~
+
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers de configuration sensibles
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.ini
+secrets.json
+credentials.json
+
+# Dossiers spécifiques au projet RAG/LLM
+chroma_db/
+vector_store/
+embeddings/
+models/
+checkpoints/
+
+# Fichiers PDF temporaires
+temp_*.pdf
+*.pdf.tmp
+
+# Fichiers de cache
+.cache/
+cache/
+
+# Fichiers de documentation générés
+docs/_build/
+docs/build/
+
+# Fichiers de test
+test_output/
+test_results/
+
+# Fichiers de profiling
+*.prof
+
+# Fichiers de monitoring
+monitoring/
+metrics/
+
+# Certificats et clés
+*.pem
+*.key
+*.crt
+*.cert
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Fichiers volumineux (optionnel)
+# *.mp4
+# *.avi
+# *.mov
+# *.mkv
