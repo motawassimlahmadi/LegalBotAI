@@ -5,7 +5,7 @@ import streamlit as st
 from langchain_community.document_loaders import UnstructuredPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from config import MAX_FILE_SIZE, logger
+from core.config import MAX_FILE_SIZE, logger
 
 
 def validate_pdf(uploaded_file) -> tuple[bool, str]:

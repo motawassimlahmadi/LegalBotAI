@@ -2,7 +2,7 @@ import time
 
 import streamlit as st
 
-from config import logger
+from core.config import logger
 
 
 def initialize_session_state():

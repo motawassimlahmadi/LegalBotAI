@@ -10,14 +10,14 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 
-from config import (
+from core.config import (
     DEFAULT_EMBEDDING_MODEL,
     DEFAULT_MODEL,
     PERSIST_DIRECTORY,
     VECTOR_STORE_NAME,
     logger,
 )
-from pdf_processor import get_file_hash, load_pdf_cached, split_documents, validate_pdf
+from core.pdf_processor import get_file_hash, load_pdf_cached, split_documents, validate_pdf
 
 # ---------------------------------------------------------------------------
 # Prompt pour le retriever multi-query

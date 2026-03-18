@@ -1,9 +1,9 @@
 import streamlit as st
 
-from config import DEFAULT_EMBEDDING_MODEL, DEFAULT_MODEL, MAX_FILE_SIZE, PERSIST_DIRECTORY
-from pdf_processor import get_file_hash
-from rag_pipeline import process_pdf_pipeline
-from ui import (
+from core.config import DEFAULT_EMBEDDING_MODEL, DEFAULT_MODEL, MAX_FILE_SIZE, PERSIST_DIRECTORY
+from core.pdf_processor import get_file_hash
+from core.rag_pipeline import process_pdf_pipeline
+from ui.components import (
     display_chat_history,
     display_metrics,
     initialize_session_state,
