@@ -1,7 +1,7 @@
-'''# Environnement virtuel spécifique
+# Environnement virtuel spécifique
 chatbot/
 
-# Environnements virtuels Python (patterns génériques)
+# Environnements virtuels Python
 venv/
 env/
 ENV/
@@ -38,11 +38,7 @@ MANIFEST
 *.manifest
 *.spec
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
+# Tests / coverage
 htmlcov/
 .tox/
 .nox/
@@ -57,95 +53,55 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Jupyter Notebook
+# Jupyter
 .ipynb_checkpoints
-
-# IPython
 profile_default/
 ipython_config.py
-
-# pyenv
-.python-version
-
-# pipenv
-Pipfile.lock
-
-# poetry
-poetry.lock
-
-# pdm
-.pdm.toml
-
-# PEP 582
-__pypackages__/
-
-# Celery
-celerybeat-schedule
-celerybeat.pid
-
-# SageMath parsed files
-*.sage.py
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
 
 # Streamlit
 .streamlit/
 
-# Fichiers de données et modèles
+# RAG / LLM
+chroma_db/
+vector_store/
+embeddings/
+models/
+checkpoints/
+
+# Bases de données
+*.db
+*.sqlite
+*.sqlite3
 *.pkl
 *.joblib
 *.h5
 *.hdf5
 *.model
 
-# Bases de données
-*.db
-*.sqlite
-*.sqlite3
-
-# Logs
+# Logs et temporaires
 *.log
 logs/
 log/
-
-# Fichiers temporaires
 temp/
 tmp/
 *.tmp
 *.temp
+temp_*.pdf
+*.pdf.tmp
 
-# Fichiers de sauvegarde
-*.bak
-*.backup
-*~
+# Fichiers sensibles
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+config.ini
+secrets.json
+credentials.json
+*.pem
+*.key
+*.crt
+*.cert
 
 # Fichiers système
 .DS_Store
@@ -156,60 +112,22 @@ tmp/
 ehthumbs.db
 Thumbs.db
 
-# Fichiers de configuration sensibles
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-config.ini
-secrets.json
-credentials.json
+# IDE
+.idea/
+.vscode/
 
-# Dossiers spécifiques au projet RAG/LLM
-chroma_db/
-vector_store/
-embeddings/
-models/
-checkpoints/
+# Sauvegarde
+*.bak
+*.backup
+*~
 
-# Fichiers PDF temporaires
-temp_*.pdf
-*.pdf.tmp
-
-# Fichiers de cache
+# Cache
 .cache/
 cache/
 
-# Fichiers de documentation générés
-docs/_build/
-docs/build/
-
-# Fichiers de test
-test_output/
-test_results/
-
-# Fichiers de profiling
+# Autres
 *.prof
-
-# Fichiers de monitoring
 monitoring/
 metrics/
-
-# Certificats et clés
-*.pem
-*.key
-*.crt
-*.cert
-
-# Archives
-*.zip
-*.tar.gz
-*.rar
-*.7z
-
-# Fichiers volumineux (optionnel)
-# *.mp4
-# *.avi
-# *.mov
-# *.mkv
+docs/_build/
+docs/build/
