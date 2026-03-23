@@ -1,24 +1,35 @@
-⚖️ LegalBot AI
+# **⚖️ LegalBot AI**
+
 Assistant juridique intelligent basé sur la technique RAG (Retrieval-Augmented Generation), permettant d'analyser des documents PDF juridiques et de répondre à des questions précises avec citations de sources.
+
 ---
-Fonctionnalités
-Upload de contrats PDF — chargement et validation automatique (max 50 MB)
-Découpage intelligent — segmentation configurable du texte en chunks
-Base vectorielle persistante — indexation via Chroma pour une recherche sémantique rapide
-Retriever multi-query — reformulation de la question sous plusieurs angles juridiques pour maximiser la pertinence des résultats
-Réponses sourcées — citations obligatoires des articles, clauses et pages du document
-Interface Streamlit — chat interactif avec historique des conversations et métriques de traitement
+## **Fonctionnalités**
+
+1. Upload de contrats PDF — chargement et validation automatique (max 50 MB)
+
+2. Découpage intelligent — segmentation configurable du texte en chunks
+
+3. Base vectorielle persistante — indexation via Chroma pour une recherche sémantique rapide
+
+4. Retriever multi-query — reformulation de la question sous plusieurs angles juridiques pour maximiser la pertinence des résultats
+
+5. Réponses sourcées — citations obligatoires des articles, clauses et pages du document
+
+6. Interface Streamlit — chat interactif avec historique des conversations et métriques de traitement
+
+
 ---
-Stack technique
-Composant	Technologie
-Interface	Streamlit
-LLM	Ollama (Llama3, Llama2, Mistral)
-Embeddings	Ollama `nomic-embed-text`
-Orchestration	LangChain
-Base vectorielle	Chroma
-Chargement PDF	`unstructured`
+| Composant            | Technologie                          |
+|---------------------|--------------------------------------|
+| Interface           | Streamlit                            |
+| LLM                 | Ollama (Llama3, Llama2, Mistral)     |
+| Embeddings          | Ollama `nomic-embed-text`            |
+| Orchestration       | LangChain                            |
+| Base vectorielle    | Chroma                               |
+| Chargement PDF      | `unstructured`                       |
+
 ---
-Structure du projet
+### Structure du projet
 ```
 LegalBotAI/
 ├── app.py                  # Point d'entrée Streamlit
@@ -31,7 +42,7 @@ LegalBotAI/
     └── components.py       # Composants Streamlit (session, streaming, métriques)
 ```
 ---
-Installation
+#### Installation
 Prérequis
 Python 3.10+
 Ollama installé et en cours d'exécution
@@ -54,15 +65,21 @@ ollama pull nomic-embed-text
 streamlit run app.py
 ```
 ---
-Utilisation
-Uploader un document PDF (contrat, accord, texte juridique)
-Configurer la taille des chunks et le modèle LLM dans la sidebar
-Poser une question en langage naturel sur le document
-L'assistant répond avec des citations précises (article, clause, page)
+#### Utilisation
+
+1. Uploader un document PDF (contrat, accord, texte juridique)
+
+2. Configurer la taille des chunks et le modèle LLM dans la sidebar
+
+3. Poser une question en langage naturel sur le document
+
+4. L'assistant répond avec des citations précises (article, clause, page)
+
 ---
-Paramètres configurables
-Paramètre	Défaut	Description
-Taille des chunks	1200	Nombre de caractères par segment
-Chevauchement	300	Overlap entre segments consécutifs
-Modèle LLM	`llama3`	Modèle de génération de texte
-Modèle embedding	`nomic-embed-text`	Modèle de vectorisation
+#### Paramètres configurables
+| Paramètre           | Défaut              | Description                                   |
+|--------------------|--------------------|-----------------------------------------------|
+| Taille des chunks  | 1200               | Nombre de caractères par segment              |
+| Chevauchement      | 300                | Overlap entre segments consécutifs            |
+| Modèle LLM         | `llama3`           | Modèle de génération de texte                 |
+| Modèle embedding   | `nomic-embed-text` | Modèle de vectorisation                       |
